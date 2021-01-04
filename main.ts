@@ -9,7 +9,6 @@ sprites.onOverlap(SpriteKind.Enemy, SpriteKind.Player, function (sprite, otherSp
 sprites.onOverlap(SpriteKind.Enemy, SpriteKind.Base, function (sprite, otherSprite) {
     sprite.destroy()
     info.changeLifeBy(-1)
-    music.powerDown.play()
 })
 let badGuy: Sprite = null
 info.setScore(0)
